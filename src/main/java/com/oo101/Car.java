@@ -1,15 +1,11 @@
 package com.oo101;
 
-public class Car {
-    private final String name;
-    private final Integer speed;
+import java.util.Vector;
+
+public class Car extends Vehicles {
 
     public Car(String name, int speed){
-        this.name = name;
-        this.speed = speed;
-    }
-    public void speedUp(){
-        System.out.println(name+": speed up "+speed+" km/h");
+        super(name, speed);
     }
 
     public static void main(String[] args) {
