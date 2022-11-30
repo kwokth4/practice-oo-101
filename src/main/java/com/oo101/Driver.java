@@ -10,9 +10,9 @@ public class Driver {
     }
 
     public static void main(String[] args) {
-        Driver driver1 = new Driver(new Car("Gasoline Car", new Gasoline().getSpeed()));
+        Driver driver1 = new Driver(new Car("Gasoline Car", new Gasoline()));
         driver1.speedup();
-        Driver driver2 = new Driver(new Car("Electric Car", new Electric().getSpeed()));
+        Driver driver2 = new Driver(new Car("Electric Car", new Electric()));
         driver2.speedup();
 
         Driver driver3 = new Driver(new Truck("Big Truck", 10));

@@ -3,9 +3,8 @@ package com.oo101;
 import java.util.Vector;
 
 public class Car extends Vehicles {
-
-    public Car(String name, int speed){
-        super(name, speed);
+    public Car(String name, Engine engine){
+        super(name, engine.getSpeed());
     }
 
     public static void main(String[] args) {
