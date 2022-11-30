@@ -10,10 +10,12 @@ public class Driver {
     }
 
     public static void main(String[] args) {
-        Driver driver1 = new Driver(new Car("Cool Car", 30));
+        Driver driver1 = new Driver(new Car("Gasoline Car", new Gasoline().getSpeed()));
         driver1.speedup();
-
-        Driver driver2 = new Driver(new Car("Big Truck", 10));
+        Driver driver2 = new Driver(new Car("Electric Car", new Electric().getSpeed()));
         driver2.speedup();
+
+        Driver driver3 = new Driver(new Truck("Big Truck", 10));
+        driver3.speedup();
     }
 }
