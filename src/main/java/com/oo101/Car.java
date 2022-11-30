@@ -6,9 +6,4 @@ public class Car extends Vehicles {
     public Car(String name, Engine engine){
         super(name, engine.getSpeed());
     }
-
-    public static void main(String[] args) {
-        Car coolCar = new Car("Cool Car",30);
-        coolCar.speedUp();
-    }
 }
